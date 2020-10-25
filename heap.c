@@ -64,13 +64,13 @@ void heap_pop(Heap* pq){
           pq -> heapArray[i] = hijoIzq;
           pq -> heapArray[left] = auxP;
           i = left;
-          left = (2 * i + 1);
+          left = ( (2 * i) + 1);
           hijoIzq = pq -> heapArray[left];
     }else{
         pq -> heapArray[i] = hijoDer;
         pq -> heapArray[right] = auxP;
         i = right;
-        left = (2 * i + 2);
+        left = ( (2 * i) + 2);
         hijoDer = pq -> heapArray[right];
 }
 if( (left > pq -> size) && (right > pq -> size) ){
